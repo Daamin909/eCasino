@@ -49,7 +49,7 @@ class Juesser extends JFrame implements ActionListener{
 			}
 			namePlate= new JLabel("How to play...");
 			namePlate.setForeground(Color.WHITE);
-			text= new JTextArea("Guess the correct number and win. There are 3 modes in this game: Easy (1 to 100), Medium (1 to 500) and Hard (1 to 1000). Guess the number and win points accordingly. Easy gives 1 point, Medium gives 5 points and the hardest of 'em all gives 10 points. All the best!! Choose your gamemode from the above menu");
+			text= new JTextArea("Guess the correct number and win. There are 3 modes in this game: Easy (1 to 100), Medium (1 to 500) and Hard (1 to 1000). Guess the number and win points accordingly. Easy gives 1 point, Medium gives 5 points and the hardest of 'em all gives 10 points. All the best!! Choose your gamemode from the above menu.");
 			text.setEditable(false);
 			text.setBorder(null);
 			text.setWrapStyleWord(true);
@@ -87,7 +87,7 @@ class Juesser extends JFrame implements ActionListener{
 		}
 		Juesser(){
             super("Juesser");
-			setSize(670, 250);
+			setSize(670, 290);
 			setLayout(new BorderLayout());
 			setResizable(false);
 			setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -99,9 +99,6 @@ class Juesser extends JFrame implements ActionListener{
 			setVisible(true);
 		}
 		public void actionPerformed(ActionEvent evt){ 
-			System.out.println(num[0]);			
-			System.out.println(num[1]);			
-			System.out.println(num[2]);
 			int index=modes.getSelectedIndex();
 			for (int y=1; y<=3; y++){
 				if (index==y){

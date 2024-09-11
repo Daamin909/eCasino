@@ -14,12 +14,9 @@ class Hub extends JFrame implements ActionListener{
 		namePlate.setHorizontalAlignment(SwingConstants.CENTER);
 		namePlate.setVerticalAlignment(SwingConstants.CENTER);
 		namePlate.setForeground(Color.LIGHT_GRAY);
-		game1= new JButton("🔨Whack-a-Doll🔨");
 		game2= new JButton("🤔 Juesser 🤔");
-		game3= new JButton("🍾 BoutleHunt 🍾");
+		game3= new JButton("💩 Pee-Poo-Fart 💩");
 		game4= new JButton("❌ Tuk-Tik-Tak ❌");
-		game5= new JButton("🕕 TimeHalter 🕕");
-		game6= new JButton("💲💲 Slotty 💲💲");
 		menu= new JMenuBar();
 		pane=new JPanel();
 		acc=new JMenu("Account");
@@ -46,7 +43,6 @@ class Hub extends JFrame implements ActionListener{
 		game4.setBounds(86, 353, 260, 50); 
 		game2.setBounds(520, 353, 320, 50); 
 		game3.setBounds(979, 353, 315, 50); 
-
 		game2.setBackground(Color.decode("#154360"));
 		game2.setForeground(Color.decode("#FFDB58"));
 		game2.setOpaque(true);
@@ -132,8 +128,8 @@ class Hub extends JFrame implements ActionListener{
 		else if (source==game2){
 			new Juesser();
 		}		
-		else if (source==game2){
-			new Juesser();
+		else if (source==game3){
+			new PeePooFart();
 		}
 	}	
 public static void main(String[] args){
