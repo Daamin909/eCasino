@@ -42,7 +42,6 @@ class Hub extends JFrame implements ActionListener{
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(1350, 600);
-
 		formatting();
 		Image bg = Toolkit.getDefaultToolkit().getImage("Resources\\BG.png");  
 		setIconImage(bg);
