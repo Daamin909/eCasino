@@ -5,7 +5,7 @@ class Hub extends JFrame implements ActionListener{
 	public static JButton game1, game2, game3, game4, game5, game6;
 	public static JPanel pane;
 	public static JLabel namePlate;
-	public static void formatting(){
+	public void formatting(){
 		namePlate= new JLabel("💰💲 eCasino™ 💲💰");
 		namePlate.setFont(new Font("Roboto", Font.BOLD, 70));
 		namePlate.setHorizontalAlignment(SwingConstants.CENTER);
@@ -42,8 +42,9 @@ class Hub extends JFrame implements ActionListener{
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(1350, 600);
+
 		formatting();
-		Image bg = Toolkit.getDefaultToolkit().getImage("D:\\Programming\\VS Code\\Java\\eCasino\\Resources\\Hub\\BG.png");  
+		Image bg = Toolkit.getDefaultToolkit().getImage("Resources\\BG.png");  
 		setIconImage(bg);
 		game2.addActionListener(this);
 		game3.addActionListener(this);
