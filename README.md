@@ -34,6 +34,7 @@ This includes many games such as:-
 - The objective is to beat the computer by choosing the winning option. Good luck!
 # Instructions To Run
 - <a href="https://github.com/Daamin909/eCasino/archive/refs/heads/main.zip" target="_blank">Download</a> the source code.
+- Unzip it.
 - Install <a href="https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html">JDK 22</a> and add it to <a href="https://www.java.com/en/download/help/path.html">Path</a>.
 - Open the Terminal in the Directory of the source code.
 - Run the following commands.
